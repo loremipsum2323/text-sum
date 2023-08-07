@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Text Summurizer</title>
+		<link rel="stylesheet" href="/static/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+		<div>
+			<h1 class="heading">A Text Summarizer</h1>
+			<p class="subtext">We Will Summarizer Your Text</p>
+		</div>
+		<div class="wrapper">
+			<form action="/" method="post">
+				<div class="form-cnt">
+					<div class="form">
+						<h2>Enter Text</h2>
+						<div class="row">
+							<!-- <label>Enter Text</label> -->
+							<textarea
+								name="text"
+								rows="12"
+								placeholder="Enter Text To Summurize"
+								required
+							>
+{{inputText}}</textarea
+							>
+						</div>
+						<button type="submit">Summarize Text</button>
+					</div>
+					<div class="form">
+						<h2>Result</h2>
+						<div class="row">
+							<!-- <label>Enter Text</label> -->
+							<textarea
+								rows="15"
+								placeholder="Result Will Be Shown Here.."
+								disabled
+								required
+							>
+{{summary}}</textarea
+							>
+						</div>
+						<!-- <button>Convert To Speech</button> -->
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
